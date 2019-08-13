@@ -20,6 +20,9 @@ public class GameEngine : MonoBehaviour
     [Tooltip("percent of image that has to match _targetColor for the player to win the round")]
     public float goalPercentage;
 
+    [Tooltip("How many seconds will the first timer start at?")]
+    public float initialClock;
+
     private string _instructionp1;
     private string _instructionp2;
 
@@ -268,7 +271,7 @@ public class GameEngine : MonoBehaviour
         {
             // we want the clock to start really high to give the user plenty of time for the first round to figure out
             // how the game works
-            _clock = 300f;
+            _clock = initialClock;
             _maxClock = _clock;
         }
         else
@@ -291,7 +294,7 @@ public class GameEngine : MonoBehaviour
         scoreText.text = _score.ToString();
         percentColorText.text = _targetColor.Name;
         instructionText.text = _instructionp1 + _targetColor.Name + _instructionp2;
-        clockText.text = $"{_clock:0.}";
+        clockText.text = $"{_clock:0.}s";
     }
     
     // Start is called before the first frame update
@@ -333,7 +336,7 @@ public class GameEngine : MonoBehaviour
     {
         // update clock
         _clock -= Time.deltaTime;
-        clockText.text = $"{_clock:0.000}";
+        clockText.text = $"{_clock:0.000}s";
         
         // if true, player loses round
         if (_clock <= 0)

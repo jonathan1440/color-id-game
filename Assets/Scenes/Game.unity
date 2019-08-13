@@ -1151,7 +1151,7 @@ MonoBehaviour:
   percentColorText: {fileID: 1701627430}
   clockText: {fileID: 1403279538}
   type: grayscale
-  goalPercentage: 0
+  goalPercentage: 0.5
 --- !u!114 &2146038719
 MonoBehaviour:
   m_ObjectHideFlags: 0
