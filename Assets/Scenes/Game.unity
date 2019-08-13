@@ -595,6 +595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1185727536}
+  - component: {fileID: 1185727537}
   m_Layer: 0
   m_Name: ui text
   m_TagString: Untagged
@@ -620,6 +621,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185727537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185727535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81d16c1deabfb448ab17eaaa9a46de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColorText: {fileID: 143933719}
+  scoreText: {fileID: 1586088945}
+  percentText: {fileID: 1848213813}
+  instructionText: {fileID: 726697838}
+  percentColorText: {fileID: 1701627430}
+  clockText: {fileID: 1403279538}
+  type: grayscale
+  goalPercentage: 0.5
+  initialClock: 300
 --- !u!1 &1403279536
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +682,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403279536}
-  m_Text: 10:00
+  m_Text: 300
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1124,7 +1146,6 @@ GameObject:
   - component: {fileID: 2146038721}
   - component: {fileID: 2146038720}
   - component: {fileID: 2146038719}
-  - component: {fileID: 2146038718}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: MainCamera
@@ -1132,26 +1153,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2146038718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2146038717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81d16c1deabfb448ab17eaaa9a46de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColorText: {fileID: 143933719}
-  scoreText: {fileID: 1586088945}
-  percentText: {fileID: 1848213813}
-  instructionText: {fileID: 726697838}
-  percentColorText: {fileID: 1701627430}
-  clockText: {fileID: 1403279538}
-  type: grayscale
-  goalPercentage: 0.5
 --- !u!114 &2146038719
 MonoBehaviour:
   m_ObjectHideFlags: 0
